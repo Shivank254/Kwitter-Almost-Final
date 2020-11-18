@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwitter Chating Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body style="text-align: center;" class="bg-warning">
+    
+<center>
+
+<button id="logout_user" onclick="logout_fn()" class="btn btn-danger glyphicon glyphicon-log-out" style="margin-top:20px;height: 45px;width: 120px;margin-left: 1400px;font-size: 20px;">  Logout</button>
+
+<br>
+
+<br>
+
+<h3 id="welcome_user"></h3>
+
+<br>
+
+<br>
+
+<div class="container btn btn-danger">
+
+<label for="text">Roomname</label>
+
+<input type="text" placeholder="Roomname" id="roomname_user" class="form-control">
+
+<br>
+
+<button id="btn_sub" onclick="submit()" class="btn btn-primary" style="height: 40px;width: 120px;font-size: larger;">Submit</button>
+
+</div>
+
+<h4 class="message_h4">Trending rooms</h4>
+
+<div id="div_for_trending_room_from_db"></div>
+
+</center>
+
+<script src="kwitter_room.js"></script>
+
+</body>
+</html>

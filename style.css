@@ -1,0 +1,29 @@
+
+body{
+
+    text-align: center;
+    
+}
+
+#login_div{
+
+    height: 600px;
+
+    width: 600px;
+
+    margin-top: 150px;
+
+}
+
+#div_for_trending_room_from_db{
+	cursor: pointer;
+	font-size: 20px;
+    color: black;
+    background-color: rgb(162, 221, 223);
+    border-radius: 50px;
+    width: 60%;
+}
+
+.user_tick{
+    width:20px;
+}
